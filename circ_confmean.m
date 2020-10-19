@@ -56,7 +56,7 @@ end
 
 % compute ingredients for conf. lim.
 r = circ_r(alpha,w,d,dim);
-n = sum(w,dim);
+n = sum(w,dim,'omitnan');
 R = n.*r;
 c2 = chi2inv((1-xi),1);
 
